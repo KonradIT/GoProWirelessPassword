@@ -1,0 +1,17 @@
+This is feedback regarding the security around GoPro's WiFi password on late GoPro models, including Hero5, Hero6, Fusion and Hero 2018.
+
+1) The password can be accessed by anyone, all it takes is to swipe down on the camera menu, tap connect then tap "name & password". 
+2) There is no indication of wifi being active other than a small symbol at the top left of the screen, no blue LEDs unlike Hero 3, Hero 4.
+3) Passwords can changed without any verification, in the connect menu the attacker would tap RESET connections to get a new auto-generated password
+4) Password can be gathered remotely as well:
+    - When pairing with the mobile device, an attacker would connect to the GoPro via bluetooth and get the password.
+    - Really important: GoPro's auto-generated pseudorandom passwords are easily cracked, the layout is [word] + [4 numbers]. A dictionary of most common words is freely available online, it does not take long to crack such password.
+
+Here are some security recommendations:
+
+- The RESET password option should require a GoPro App connection, so only the original owner can change the password. This might be a disadvantage for second-hand GoPro owners, who might want to change the password, the fix would be to connect the camera to a computer and change the password.
+- Don't show the password on the camera itself, or at least require a 4 digit pin code.
+- Allow for users to change their passwords to something stronger and memorable.
+- Don't transmit the password over Bluetooth.
+
+For more information, questions and code requests: mail@chernowii.com

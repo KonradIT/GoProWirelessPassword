@@ -1,0 +1,6 @@
+goprocam
+gatt
+gattlib
+pybluez
+wifi
+pandas
