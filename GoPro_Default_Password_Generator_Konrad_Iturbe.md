@@ -20,7 +20,7 @@
 	- Android Developer for several companies
 	- worked with consumer technologies in industrial scenarios for the last 5 years
 	- makes: goprowifihack (GoPro unofficial WiFi API), autoexechack, etc...
-    github.com/konradit && twitter.com/konrad_it
+	- github.com/konradit && twitter.com/konrad_it
 
 ## Preface:
 
@@ -34,9 +34,9 @@ GoPro has been notified of these issues, a report was sent on August 20.
 
 ## Pseudorandom password generation:
 
-![](password_generated1.jpg)
-
-![](password_generated2.jpg)
+| Step 1                              | Step 2                              |
+|-------------------------------------|-------------------------------------|
+| ![](images/password_generated1.jpg) | ![](images/password_generated2.jpg) |
 
 GoPro WiFi passwords have the following structure:
 
@@ -64,11 +64,8 @@ The service in question is "b5f90001-aa8d-11e3-9046-0002a5d5c51b", from there th
 
 This is how the camera advertises when pairing.
 
-![](images/Bluetooth_Step_1.png)
-
-![](images/Bluetooth_Step_2.png)
-
-![](images/Bluetooth_Step_3.jpg)
+| ![](images/Bluetooth_Step_1.png) | ![](images/Bluetooth_Step_2.png) | ![](images/Bluetooth_Step_3.jpg) |
+|----------------------------------|----------------------------------|----------------------------------|
 
 I've developed an Proof-of-Concept in Python which connects to any GoPro via Bluetooth when pairing, then gets the WiFi SSID and WiFi Password, uses that to connect to it via WiFi, then commands the camera to take a picture and also prints the WiFi SSID, Password and Camera Serial Number.
 
@@ -143,10 +140,10 @@ Other camera manufacturers such as Xiaomi Yi and DJI let users change the WiFi S
 
 ## Credits, references & end notes:
 
-1: http://chernowii.com
-2: https://github.com/konradit/goprowifihack
-3: https://www.britannica.com/topic/list-of-sports-2038581
-4: https://www.bbc.co.uk/news/av/technology-32934083/gopro-cameras-could-be-used-to-spy-on-owners
+1. http://chernowii.com
+2. https://github.com/konradit/goprowifihack
+3. https://www.britannica.com/topic/list-of-sports-2038581
+4. https://www.bbc.co.uk/news/av/technology-32934083/gopro-cameras-could-be-used-to-spy-on-owners
 
 Watch this space: https://github.com/konradit/GoProWirelessPassword
 
