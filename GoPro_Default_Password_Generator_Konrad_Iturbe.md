@@ -2,6 +2,12 @@
 
 ...and getting them through Bluetooth
 
+### Notice:
+
+- 10/24: This research was done in August 2018. At the time GoPro was alerted. I developed this using a Hero 5 Black camera. Both me and HYPOXIC confirm the following exploits are present on Hero 6 and Hero 7 cameras. [HYPOXIC has researched how to obtain a list of all possible passwords for offline cracking attacks](https://github.com/hypoxic/gopro-pwCreator).
+
+This paper has been sent for review for ROOTEDCON madrid!
+
 ## File Index:
 
 | File                             | Description |
@@ -69,7 +75,7 @@ This is how the camera advertises when pairing.
 
 I've developed an Proof-of-Concept in Python which connects to any GoPro via Bluetooth when pairing, then gets the WiFi SSID and WiFi Password, uses that to connect to it via WiFi, then commands the camera to take a picture and also prints the WiFi SSID, Password and Camera Serial Number.
 
-[Proof of Concept Python Code](videos/Bluetooth_Password_Fetch.py)
+[Proof of Concept Python Code](code/Bluetooth_Password_Fetch.py)
 
 [Video Demo](videos/BT_Demo_720p.mp4)
 
@@ -147,6 +153,6 @@ Other camera manufacturers such as Xiaomi Yi and DJI let users change the WiFi S
 
 Watch this space: https://github.com/konradit/GoProWirelessPassword
 
-- Credits: zibri, evilwombat, hostile, infosec twitter, gopro
+- Credits: HYPOXIC, zibri, evilwombat, hostile, infosec twitter, gopro
 - See more GoPro stuff: github.com/konradit
 - Questions? twitter.com/konrad_it, mail AT chernowii DOT com
